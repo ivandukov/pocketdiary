@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        tools:context=".activities.entry.NewEntryActionActivity">
+
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:gravity="center_horizontal"
+            android:text="@string/newEntryAction_txtView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineH"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+        <TextView
+            android:id="@+id/txtViewChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:text="@string/txtViewChoose"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineH" />
+
+        <ImageButton
+            android:id="@+id/btnGame"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnGameDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnBasketball"
+            app:layout_constraintEnd_toStartOf="@+id/btnLove"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconTopRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_sports_esports_outline_24px" />
+
+        <ImageButton
+            android:id="@+id/btnLove"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnLoveDescription"
+            android:outlineProvider="none"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconTopRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_favorite_border_24px" />
+
+        <ImageButton
+            android:id="@+id/btnFFood"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnFFoodDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnFriends"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toEndOf="@+id/btnLove"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconTopRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_fastfood_24px_1" />
+
+        <ImageButton
+            android:id="@+id/btnBasketball"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="199dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnBasketballDescription"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/txtBtnBackwards"
+            app:layout_constraintEnd_toStartOf="@+id/btnHome"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconMiddleRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_sports_basketball_24px" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="143dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnHomeDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconMiddleRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_weekend_24px" />
+
+
+        <ImageButton
+            android:id="@+id/btnFriends"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="241dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnFriendsDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toEndOf="@+id/btnHome"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconMiddleRow"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_groups_24px_1" />
+
+
+        <ImageButton
+            android:id="@+id/btnMusic"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnMusicDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/btnShopping"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconLastRow"
+            app:srcCompat="@drawable/ic_radio_24px_outline_" />
+
+        <ImageButton
+            android:id="@+id/btnShopping"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnShoppingDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconLastRow"
+            app:srcCompat="@drawable/ic_shopping_cart_24px" />
+
+        <ImageButton
+            android:id="@+id/btnBriefcase"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/btnBriefcaseDescription"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnShopping"
+            app:layout_constraintTop_toTopOf="@id/guidelineIconLastRow"
+            app:srcCompat="@drawable/ic_work_outline_24px" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="87dp"
+            android:max="3"
+            android:progress="2"
+            android:progressTint="#FFC940"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineB" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00000000"
+            android:contentDescription="@string/btnContentDescription_next"
+            android:fontFamily="@font/source_sans_pro"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_forward_ios_black_18dp" />
+
+        <TextView
+            android:id="@+id/txtBtnBackwards"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:paddingTop="14dp"
+            android:focusable="true"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/txtBtnBack"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13235295" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23416789" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineIconTopRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineIconMiddleRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineIconLastRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

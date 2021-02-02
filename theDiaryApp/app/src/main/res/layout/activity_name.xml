@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.NameActivity">
+
+
+    <TextView
+        android:id="@+id/txtViewAskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/name_txtViewAskName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineH" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEditName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:hint="@string/name_txtEditName"
+        app:boxStrokeColor="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewAskName"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextNameIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="@font/source_sans_pro"
+            android:inputType="textPersonName"
+            android:textColor="@color/primaryDarkColor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="@string/btnContentDescription_next"
+        android:fontFamily="@font/source_sans_pro"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:tint="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward_ios_black_18dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23416789" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    tools:context=".activities.tutorial.TutorialHomeEntryActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/contentDescriptionPlus"
+        android:paddingBottom="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineH"
+        app:srcCompat="@drawable/tutorial_screen_home" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="@string/btnContentDescription_next"
+        android:fontFamily="@font/source_sans_pro"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:tint="@color/primaryLightColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward_ios_black_18dp" />
+
+    <TextView
+        android:id="@+id/txtBtnBackwards"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:paddingTop="14dp"
+        android:focusable="true"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="@string/txtBtnBack"
+        android:textAllCaps="true"
+        android:textSize="13sp"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical"
+        android:max="4"
+        android:progress="2"
+        android:progressBackgroundTint="@color/primaryTextColor"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintGuide_percent="0.88" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07633588"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

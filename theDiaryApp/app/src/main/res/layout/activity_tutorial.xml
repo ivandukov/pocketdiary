@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:scrollbars="vertical">
+
+
+        <TextView
+            android:id="@+id/txtTutorialIntroStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/tutrorial_damit_du"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/guidelineV"
+            app:layout_constraintTop_toTopOf="@id/guidelineH" />
+
+
+        <TextView
+            android:id="@+id/txtTutorialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtTutorialIntroEnd"
+            app:layout_constraintStart_toEndOf="@+id/txtTutorialIntroStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineH"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtTutorialIntroEnd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/introTutorial"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/guidelineV"
+            app:layout_constraintTop_toBottomOf="@+id/txtTutorialIntroStart" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:max="4"
+            android:progress="1"
+            android:progressBackgroundTint="@color/primaryTextColor"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#00000000"
+            android:contentDescription="@string/btnContentDescription_next"
+            android:fontFamily="@font/source_sans_pro"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/primaryLightColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_forward_ios_black_18dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintGuide_percent="0.88" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07633588"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23416789"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
