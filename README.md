@@ -21,8 +21,8 @@ The Pocket Diary Team:<br>
 
 
 Ivan Dukov<br>
-Huyen Pham<br> @ivandukov
-Saša Bojanic<br> @Sabo2k
+Huyen Pham<br>
+Saša Bojanic<br> 
 Dajana Denjiz<br>
 
 
