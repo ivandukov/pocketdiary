@@ -8,12 +8,34 @@ The app should help you get to know yourself better, Enable daily self-reflectio
 
 ## Table of contents
 
+
 ***TODO***
 
-## Installation
-***TODO***
+
 ## Usage
-***TODO***
+
+1. Clone repo
+2. Open Project with Android Studio
+3. Sync Gradle dependencies
+4. Done
+
+## Features
+
+- Saves your mood,thing that you have done and a small note locally and securely 
+- Uses no permissions (even no Internet)
+- Dark Mode
+- Notification to remind you to check into the app
+- Achievements which can help you better reach your goals
+- Vision and Tutorial screens
+- Customization which includes your name on the homescreen
+
+## Next steps
+
+- Change to Kotlin
+- Sort criteria 
+- Graphs
+- More Customization
+
 
 ## Credits
 
@@ -24,9 +46,6 @@ Ivan Dukov<br>
 Huyen Pham<br> @ivandukov
 Saša Bojanic<br> @Sabo2k
 Dajana Denjiz<br>
-
-
-
 
 
 ## License
