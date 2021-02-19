@@ -1,4 +1,4 @@
-# Pocket Diary
+![PocketDiary Logo](logo.png)
 
 
 Due to the Corona crisis, you are at home most of the time and run the risk of losing the feeling of everyday life.This open source app is intended to provide an overview of one‘s own daily activities and associated feelings.
@@ -31,8 +31,9 @@ The app should help you get to know yourself better, Enable daily self-reflectio
 
 ## Next steps
 
-- Change to Kotlin
-- Sort criteria 
+- Refactor
+- Port to Kotlin
+- more Sort criteria 
 - Graphs
 - More Customization
 
