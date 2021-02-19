@@ -6,10 +6,27 @@ In contrast to other apps that follow a similar approach, our app introduces so-
 The app should help you get to know yourself better, Enable daily self-reflection and preserve memories by being asked every day what you did today and how you feel.
 
 
-## Table of contents
+## Table of contents ( in German ) 
+
+[Sprint Documentation](/documentation/SprintDokumentation.md)
 
 
-***TODO***
+[Thinking-aloud for the app](pocketdiary/documentation/research/evaluation/thinking-aloud-app.md)
+
+
+[Thinking-aloud for the paper prototypes](pocketdiary/documentation/research/evaluation/thinking-aloud-paper.md)
+
+
+[Usability Inspection](pocketdiary/documentation/research/evaluation/usability_inspection.md)
+
+
+[User Research Interviews and Guidelines](pocketdiary/documentation/research/interviews)
+
+
+[Persona + Documentation for the Persona and Stakeholder](pocketdiary/documentation/research/persona)
+
+
+[Paper Prototypes and Documentation of them ](pocketdiary/documentation/research/prototypes/)
 
 
 ## Usage
